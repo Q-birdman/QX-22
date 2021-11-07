@@ -6,7 +6,7 @@ array = []
 
 while True:
     try:
-        data_uart = xbeeBLE.ReceiveUART(byte = 37, pr = "d")
+        data_uart = xbeeBLE.ReceiveUART()
         if data_uart is not None:
             array.append(data_uart)
     except:
@@ -27,7 +27,7 @@ while True:
     except:
         pass
                 
-    utime.sleep_ms(1000)
+    utime.sleep_ms(100)
     
 
 
