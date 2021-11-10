@@ -10,7 +10,7 @@ duty_base = const(65535)
 RUD_MAX = duty_base*0.08846
 RUD_MIN = duty_base*0.06281
 
-uart = UART(0, tx = Pin(16), rx = Pin(17))
+uart = UART(0, 115200, tx = Pin(16), rx = Pin(17))
 
 rud_array = []
 

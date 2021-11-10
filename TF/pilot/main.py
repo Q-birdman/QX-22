@@ -18,7 +18,7 @@ SWITCH_NUETRAL = 17
 
 step = 0.0001
 
-uart = UART(0, tx=Pin(0), rx= Pin(1))
+uart = UART(0, 115200, tx=Pin(0), rx= Pin(1))
 
 def map(input:int, in_max:int, in_min:int, out_max:int,out_min:int) -> int:
     res = (input-in_min)*(out_max-out_min)/(in_max-in_min) + out_min
